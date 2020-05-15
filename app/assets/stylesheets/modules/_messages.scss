@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
 }
 
 //二つを並べるやつ
@@ -10,7 +9,6 @@
 }
 
 .sidebar{
-
   width: 300px;
 
   &__box{
@@ -21,7 +19,6 @@
   display: flex;
   align-items: center;
 
- 
   
   &__namebox{
     margin: 0;
@@ -33,20 +30,12 @@
     &__icons{
       height: 16px;
   
-  
-  
       i{
         font-size: 16px;
         color: #ffffff;
       }
+    }  
   }
-
-  
-  }
-
-
-
-
 }
   
 
@@ -81,7 +70,6 @@
 
   width: calc(100vw - 300px);
 
-
 //上のチャットルームの名前が出るところ
   &__header{
   height: 100px;
@@ -90,7 +78,6 @@
   font-size: 20px;
   padding: 35px 40px 0 40px;
   border-bottom: 1px solid #eee;
-
   position: relative;
 
   &__messagebox{
@@ -160,11 +147,7 @@
     &__timestamp{
       font-size: 12px;
       color: #999999;
-
-
     }
-
-
   }
 
 
@@ -173,8 +156,7 @@
     margin-top: 12px;
 
   }
-
-  }
+}
 
 
 
@@ -228,9 +210,5 @@
       line-height: 50px;
       color: #ffffff;
     }
-
-
   }
-  
-
 }
