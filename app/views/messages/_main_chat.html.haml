@@ -1,0 +1,50 @@
+.mainchat
+  .mainchat__header
+    .mainchat__header__messagebox
+      %p.chatroomname test
+
+      .mainchat__header__editbtn
+        Edit
+    .mainchat__header__menbername
+      Member:masa
+
+
+  .mainchat__chatscreen
+    .mainchat__chatscreen__box
+      .mainchat__chatscreen__infobox
+        .mainchat__chatscreen__infobox__name
+          masa
+        .mainchat__chatscreen__infobox__timestamp
+          2020/05/01
+      .mainchat__chatscreen__subtitle
+        こんにちは〜
+
+
+    .mainchat__chatscreen__box
+    
+      .mainchat__chatscreen__infobox
+        .mainchat__chatscreen__infobox__name
+          masa
+        .mainchat__chatscreen__infobox__timestamp
+          2020/05/01
+      .mainchat__chatscreen__subtitle
+        こんばんは
+
+
+
+
+
+
+
+
+  .mainchat__chattext
+    .mainchat__chattext__form
+      .mainchat__chattext__form__textarea
+        %p.type type a message
+        .mainchat__chattext__form__addimage
+          %label{class: "input-box__image"}
+            =icon('far fa-image', 'image', class: 'icon')
+            %input{type: "file"}
+    
+      .mainchat__chattext__sendbtn
+        Send
