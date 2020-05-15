@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  Box-sizing: border-Box;
 }
 
 //二つを並べるやつ
@@ -11,7 +11,7 @@
 .sidebar{
   width: 300px;
 
-  &__box{
+  &__Box{
   background-color:#253141;
   padding: 0 20px;
   width: 300px;
@@ -20,7 +20,7 @@
   align-items: center;
 
   
-  &__namebox{
+  &__nameBox{
     margin: 0;
     color: white;
     display: flex;
@@ -37,8 +37,6 @@
     }  
   }
 }
-  
-
 }
 
 
@@ -49,13 +47,13 @@
   background-color: #2f3e51;
   padding-left: 20px;
 
-  &__chatroomsname{
+  &__chatRoomsName{
    padding-top: 10px;
    font-size: 15px;
    color: #ffffff;
   }
 
-  &__chattitle{
+  &__chatTitle{
     margin-top: 5px;
     font-size: 11px;
     color: #ffffff;
@@ -80,7 +78,7 @@
   border-bottom: 1px solid #eee;
   position: relative;
 
-  &__messagebox{
+  &__messageBox{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +108,7 @@
   }
 
 
-  &__menbername{
+  &__menberName{
     color: #999999;
     font-size: 12px;
     position: absolute;
@@ -124,15 +122,15 @@
 
 
 //チャットルームの本文が載るところ
-  &__chatscreen{
+  &__chatScreen{
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px;
 
-    &__box{
+    &__Box{
       margin-bottom: 46px;
     }
-    &__infobox{
+    &__infoBox{
       display: flex;
 
     
@@ -151,7 +149,7 @@
   }
 
 
-  &__subtitle{
+  &__subTitle{
     font-size: 14px;
     margin-top: 12px;
 
@@ -164,7 +162,7 @@
 
 
 //チャットを書くところ
-  &__chattext{
+  &__chatText{
     height: 90px;
     background-color: #d2d2d2;
 
@@ -175,7 +173,7 @@
       padding: 20px 40px;
 
 
-      &__textarea{
+      &__textArea{
         background-color: #ffffff;
         width: 100%;
         height: 50px;
