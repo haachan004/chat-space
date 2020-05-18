@@ -3,13 +3,13 @@
   .sidebar__Box
     .sidebar__Box__nameBox
       .sidebar__Box__nameBox__name
-        %p.name masa
+        = current_user.name
       .sidebar__Box__nameBox__icons
         %ul.editicons
           =link_to "#" do
             =icon('fas fa-L', 'edit', class: 'icon')      
 
-          =link_to "#" do
+          = link_to edit_user_path(current_user) do
             =icon('fas fa-L', 'cogs', class: 'icon')
 
   .chatrooms
