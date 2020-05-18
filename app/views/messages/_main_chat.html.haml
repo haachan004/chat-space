@@ -1,50 +1,41 @@
 .mainchat
   .mainchat__header
-    .mainchat__header__messagebox
+    .mainchat__header__messageBox
       %p.chatroomname test
 
       .mainchat__header__editbtn
         Edit
-    .mainchat__header__menbername
+    .mainchat__header__menberName
       Member:masa
 
-
-  .mainchat__chatscreen
-    .mainchat__chatscreen__box
-      .mainchat__chatscreen__infobox
-        .mainchat__chatscreen__infobox__name
+  .mainchat__chatScreen
+    .mainchat__chatScreen__Box
+      .mainchat__chatScreen__infoBox
+        .mainchat__chatScreen__infoBox__name
           masa
-        .mainchat__chatscreen__infobox__timestamp
+        .mainchat__chatScreen__infoBox__timestamp
           2020/05/01
-      .mainchat__chatscreen__subtitle
+      .mainchat__chatScreen__subTitle
         こんにちは〜
 
-
-    .mainchat__chatscreen__box
+    .mainchat__chatScreen__Box
     
-      .mainchat__chatscreen__infobox
-        .mainchat__chatscreen__infobox__name
+      .mainchat__chatScreen__infoBox
+        .mainchat__chatScreen__infoBox__name
           masa
-        .mainchat__chatscreen__infobox__timestamp
+        .mainchat__chatScreen__infoBox__timestamp
           2020/05/01
-      .mainchat__chatscreen__subtitle
+      .mainchat__chatScreen__subTitle
         こんばんは
 
-
-
-
-
-
-
-
-  .mainchat__chattext
-    .mainchat__chattext__form
-      .mainchat__chattext__form__textarea
+  .mainchat__chatText
+    .mainchat__chatText__form
+      .mainchat__chatText__form__textArea
         %p.type type a message
-        .mainchat__chattext__form__addimage
-          %label{class: "input-box__image"}
+        .mainchat__chatText__form__addimage
+          %label{class: "input-Box__image"}
             =icon('far fa-image', 'image', class: 'icon')
             %input{type: "file"}
-    
-      .mainchat__chattext__sendbtn
+
+      .mainchat__chatText__sendbtn
         Send

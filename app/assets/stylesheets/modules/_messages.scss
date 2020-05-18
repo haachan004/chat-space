@@ -1,6 +1,5 @@
 * {
-  box-sizing: border-box;
-
+  Box-sizing: border-Box;
 }
 
 //二つを並べるやつ
@@ -10,10 +9,9 @@
 }
 
 .sidebar{
-
   width: 300px;
 
-  &__box{
+  &__Box{
   background-color:#253141;
   padding: 0 20px;
   width: 300px;
@@ -21,9 +19,8 @@
   display: flex;
   align-items: center;
 
- 
   
-  &__namebox{
+  &__nameBox{
     margin: 0;
     color: white;
     display: flex;
@@ -33,23 +30,13 @@
     &__icons{
       height: 16px;
   
-  
-  
       i{
         font-size: 16px;
         color: #ffffff;
       }
+    }  
   }
-
-  
-  }
-
-
-
-
 }
-  
-
 }
 
 
@@ -60,13 +47,13 @@
   background-color: #2f3e51;
   padding-left: 20px;
 
-  &__chatroomsname{
+  &__chatRoomsName{
    padding-top: 10px;
    font-size: 15px;
    color: #ffffff;
   }
 
-  &__chattitle{
+  &__chatTitle{
     margin-top: 5px;
     font-size: 11px;
     color: #ffffff;
@@ -81,7 +68,6 @@
 
   width: calc(100vw - 300px);
 
-
 //上のチャットルームの名前が出るところ
   &__header{
   height: 100px;
@@ -90,10 +76,9 @@
   font-size: 20px;
   padding: 35px 40px 0 40px;
   border-bottom: 1px solid #eee;
-
   position: relative;
 
-  &__messagebox{
+  &__messageBox{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,7 +108,7 @@
   }
 
 
-  &__menbername{
+  &__menberName{
     color: #999999;
     font-size: 12px;
     position: absolute;
@@ -137,15 +122,15 @@
 
 
 //チャットルームの本文が載るところ
-  &__chatscreen{
+  &__chatScreen{
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px;
 
-    &__box{
+    &__Box{
       margin-bottom: 46px;
     }
-    &__infobox{
+    &__infoBox{
       display: flex;
 
     
@@ -160,21 +145,16 @@
     &__timestamp{
       font-size: 12px;
       color: #999999;
-
-
     }
-
-
   }
 
 
-  &__subtitle{
+  &__subTitle{
     font-size: 14px;
     margin-top: 12px;
 
   }
-
-  }
+}
 
 
 
@@ -182,7 +162,7 @@
 
 
 //チャットを書くところ
-  &__chattext{
+  &__chatText{
     height: 90px;
     background-color: #d2d2d2;
 
@@ -193,7 +173,7 @@
       padding: 20px 40px;
 
 
-      &__textarea{
+      &__textArea{
         background-color: #ffffff;
         width: 100%;
         height: 50px;
@@ -228,9 +208,5 @@
       line-height: 50px;
       color: #ffffff;
     }
-
-
   }
-  
-
 }
