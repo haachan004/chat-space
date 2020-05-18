@@ -6,17 +6,19 @@
         = current_user.name
       .sidebar__Box__nameBox__icons
         %ul.editicons
-          =link_to "#" do
+          =link_to new_group_path do
             =icon('fas fa-L', 'edit', class: 'icon')      
 
           = link_to edit_user_path(current_user) do
             =icon('fas fa-L', 'cogs', class: 'icon')
 
   .chatrooms
-    .chatrooms__chatRoomsName
-      %p.roomTitle techcamp
-    .chatrooms__chatTitle
-      %p.roomtext まだメッセージがありません
+    - current_user.groups.each do |group|
+      .chatrooms__chatRoomsName
+        = link_to '#' do
+          = group.name
+      .chatrooms__chatTitle
+        %p.roomtext まだメッセージがありません
 
 
   

@@ -47,10 +47,15 @@
   background-color: #2f3e51;
   padding-left: 20px;
 
+
   &__chatRoomsName{
    padding-top: 10px;
    font-size: 15px;
    color: #ffffff;
+   a{
+    color: #ffffff;
+    text-decoration: none;
+   }
   }
 
   &__chatTitle{
