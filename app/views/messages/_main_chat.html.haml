@@ -1,41 +1,31 @@
 .mainchat
   .mainchat__header
     .mainchat__header__messageBox
-      %p.chatroomname test
-
-      .mainchat__header__editbtn
+      = @group.name
+    .mainchat__header__editbtn
+      = link_to edit_group_path(@group.id) do
         Edit
     .mainchat__header__menberName
-      Member:masa
+      Member:
+      - @group.users.each do |user|
+        = user.name 
 
   .mainchat__chatScreen
-    .mainchat__chatScreen__Box
-      .mainchat__chatScreen__infoBox
-        .mainchat__chatScreen__infoBox__name
-          masa
-        .mainchat__chatScreen__infoBox__timestamp
-          2020/05/01
-      .mainchat__chatScreen__subTitle
-        こんにちは〜
-
-    .mainchat__chatScreen__Box
+    = render @messages
     
-      .mainchat__chatScreen__infoBox
-        .mainchat__chatScreen__infoBox__name
-          masa
-        .mainchat__chatScreen__infoBox__timestamp
-          2020/05/01
-      .mainchat__chatScreen__subTitle
-        こんばんは
-
   .mainchat__chatText
     .mainchat__chatText__form
-      .mainchat__chatText__form__textArea
-        %p.type type a message
-        .mainchat__chatText__form__addimage
-          %label{class: "input-Box__image"}
-            =icon('far fa-image', 'image', class: 'icon')
-            %input{type: "file"}
+      = form_with model: [@group, @message], html: {class: "chatText__form"}, local: true do |f|
+        .mainchat__chatText__form__textArea
+          = f.text_field :content, class: 'chatText__form__textArea', placeholder: 'type a message'
+          = f.label :image, class: 'chatText__form__textArea' do
 
-      .mainchat__chatText__sendbtn
-        Send
+            = icon('far', 'image', class: 'form__textArea__addimage')
+            = f.file_field :image, class: 'input'
+            
+        .mainchat__chatText__form__sendbtn
+          = f.submit 'Send', class: '__sendbtn'
+
+
+
+  

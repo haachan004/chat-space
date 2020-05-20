@@ -1,0 +1,11 @@
+.mainchat__chatScreen__Box
+  .mainchat__chatScreen__Box__infoBox
+    .mainchat__chatScreen__Box__infoBox__name
+      = message.user.name
+    .mainchat__chatScreen__Box__infoBox__timestamp
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .mainchat__chatScreen__Box__infoBox__subTitle
+    - if message.content.present?
+      %p.Message__content
+        = message.content
+    = image_tag message.image.url, class: 'Message__image' if message.image.present?
