@@ -57,7 +57,6 @@ $(function(){
       let html = buildHTML(data);
       $('.mainchat__chatScreen').append(html); 
       $('.mainchat__chatScreen').animate({ scrollTop: $('.mainchat__chatScreen')[0].scrollHeight});     
-      $('form')[0].reset();
     })
     .fail(function(){
       alert("メッセージ送信に失敗しました");
@@ -65,6 +64,7 @@ $(function(){
 
     .always(function(){
       $('.__sendbtn').prop("disabled", false);
+      $('form')[0].reset();
 
     })
   });
