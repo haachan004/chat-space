@@ -15,7 +15,7 @@
   .chatrooms
     - current_user.groups.each do |group|
       .chatrooms__chatRoomsName
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           = group.name
       .chatrooms__chatTitle
         = group.show_last_message
