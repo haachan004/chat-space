@@ -1,8 +1,9 @@
 $(function(){
+
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="mainchat__chatScreen__Box">
+        `<div class="mainchat__chatScreen__Box" data-message-id=${message.id}>
           <div class="mainchat__chatScreen__Box__infoBox">
             <div class="mainchat__chatScreen__Box__infoBox__name">
               ${message.user_name}
@@ -21,7 +22,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="mainchat__chatScreen__Box">
+      `<div class="mainchat__chatScreen__Box" data-message-id=${message.id}>
         <div class="mainchat__chatScreen__Box__infoBox">
           <div class="mainchat__chatScreen__Box__infoBox__name">
             ${message.user_name}
@@ -67,5 +68,6 @@ $(function(){
       $('form')[0].reset();
 
     })
+
   });
 });
