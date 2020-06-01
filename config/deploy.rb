@@ -13,7 +13,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.5' #カリキュラム通りに進めた場合、2.6.5です
-
+set :log_level, :debug
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/chatspace.pem'] 
@@ -31,5 +31,3 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
-
-set :log_level, :debug
